@@ -1,0 +1,17 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore large/media files
+audios/
+videos/
+jsons/
+whisper/
+
+# Ignore temp files
+*.joblib
+*.txt
+tempCodeRunnerFile.py
+
+# Ignore useless folder
+useless/
