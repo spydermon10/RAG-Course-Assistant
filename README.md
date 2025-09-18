@@ -18,22 +18,6 @@ It helps students quickly find where topics are explained in long video lectures
 - scikit-learn (cosine similarity)
 - Pandas / NumPy
 - ffmpeg
-## 📂 Project Structure
-
-```text
-RAG-Project/
-├── audios/              # extracted audio files (ignored in git)
-├── videos/              # original course videos (ignored in git)
-├── jsons/               # Whisper transcripts (ignored in git)
-├── process_incoming.py  # main RAG pipeline
-├── video_to_mp3.py      # video → audio
-├── mp3_to_json.py       # audio → transcript
-├── read_chunks.py       # build embeddings
-├── embeddings.joblib    # stored embeddings (ignored in git)
-├── README.md
-└── .gitignore
-
-
 
 ## 📖 How it Works
 1. Convert course videos → audio (`ffmpeg`)
@@ -61,4 +45,24 @@ Prompt:  "where is html concluded"
 ### 🔹 Response
 Example of how a user query gets answered:  
 ![Prompt and Response](images/response.png)
+
+
+
+## 📂 Project Structure
+
+```text
+RAG-Project/
+├── audios/              # extracted audio files (ignored in git)
+├── videos/              # original course videos (ignored in git)
+├── jsons/               # Whisper transcripts (ignored in git)
+├── process_incoming.py  # main RAG pipeline
+├── video_to_mp3.py      # video → audio
+├── mp3_to_json.py       # audio → transcript
+├── read_chunks.py       # build embeddings
+├── embeddings.joblib    # stored embeddings (ignored in git)
+├── README.md
+└── .gitignore
+
+
+
 
